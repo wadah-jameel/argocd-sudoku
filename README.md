@@ -26,7 +26,7 @@ docker push your-dockerhub-username/sudoku:v1
 
 ---
 
-## Step 2: Create a Git Repository for Kubernetes Manifests
+Step 2: Create a Git Repository for Kubernetes Manifests
 
 ArgoCD follows the **GitOps** model — your cluster state lives in Git. Keep your app code and K8s manifests in **separate repos** (best practice).
 
