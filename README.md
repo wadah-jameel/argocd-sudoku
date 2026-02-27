@@ -217,3 +217,15 @@ Your Code → Docker Image → Push to Registry
 * Use namespaces to separate environments (e.g., dev, staging, prod) within the same cluster.
 * Never edit resources directly with kubectl when using ArgoCD — always change Git and let ArgoCD sync. Manual changes will be reverted if selfHeal: true is set.
 ```
+
+### Argocd Dashboard
+
+![argocd_dashboard](screenshots/argocd-dashboard-sudoku.png)
+
+
+### Sudoku Game
+
+![sudoku](screenshots/sudoku-game.png)
+
+
+
