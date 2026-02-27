@@ -10,6 +10,27 @@ Prerequisites
 - Docker installed (to build your image)
 - A Docker Hub or container registry account
 
+```markdown
+
+┌─────────────┐     push      ┌─────────────┐
+│  Your Code  │ ────────────► │     Git     │
+└─────────────┘               └──────┬──────┘
+                                     │ watches
+                              ┌──────▼──────┐
+                              │   ArgoCD    │
+                              └──────┬──────┘
+                                     │ applies
+                              ┌──────▼──────┐
+                              │ Kubernetes  │
+                              └──────┬──────┘
+                                     │ runs
+                              ┌──────▼──────┐
+                              │   Sudoku
+                              │   Website   │
+                              └─────────────┘
+
+```
+
 
 Step 1: Containerize Your Website
 
