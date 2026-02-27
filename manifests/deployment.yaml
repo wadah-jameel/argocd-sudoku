@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sudoku
+  namespace: sudoku
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sudoku
+  template:
+    metadata:
+      labels:
+        app: sudoku
+    spec:
+      containers:
+        - name: sudoku
+          image: your-dockerhub-username/sudoku:v1
+          ports:
+            - containerPort: 80
